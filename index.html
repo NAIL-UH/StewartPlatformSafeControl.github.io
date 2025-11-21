@@ -209,7 +209,54 @@
 
     <!-- Section title -->
     <h2 class="title is-3 has-text-centered">
-      Simulation and Experimental Results
+      Simulation Results
+    </h2>
+
+    <!-- Image block -->
+    <div class="columns is-centered">
+      <div class="column is-10 has-text-centered">
+        <figure class="image">
+          <img
+            src="./static/images/sim_results.png"
+            alt="Simulation results comparing QP and closed-form CBF controllers for Stewart platform safety."
+            style="max-width: 100%; height: auto;"
+          >
+        </figure>
+
+        <p class="subtitle is-6 has-text-justified">
+          The simulation results evaluate the effectiveness of the proposed closed-form controller
+          with the QP-CBF method. This plot shows the enforcement of velocity safety constraints.
+          Black indicates the uncontrolled system, magenta corresponds to QP-CBF, and blue denotes the
+          proposed closed-form approach.
+        </p>
+      </div>
+    </div>
+
+    <!-- Video block -->
+    <div class="columns is-centered" style="margin-top: 2rem;">
+      <div class="column is-10 has-text-centered">
+        <video id="sim-video" autoplay controls muted loop playsinline width="100%">
+          <source src="./static/videos/New Simulation Video.mp4" type="video/mp4">
+        </video>
+
+        <p class="subtitle is-6 has-text-justified">
+          Simulation video visualizing the Stewart platform behavior under the proposed closed-form controller and it's QP counterpart.
+          It also shows the 3D view of the platform's movement.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+              
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Section title -->
+    <h2 class="title is-3 has-text-centered">
+      Experimental Results
     </h2>
 
     <!-- Figure rows -->
@@ -218,23 +265,35 @@
       <div class="column is-10 has-text-centered">
         <figure class="image">
           <img
-            src="./static/images/sim_results.png"
-            alt="Simulation results comparing QP and closed-form CBF controllers enforcing Stewart platform velocity constraints."
+            src="./static/images/new_data.png"
+            alt="Experimental results comparing QP and closed-form CBF controllers enforcing Stewart platform velocity constraints."
             style="max-width: 100%; height: auto;"
           >
         </figure>
         <p class="subtitle is-6 has-text-justified">
-          The simulation results evaluate the effectiveness of the proposed closed-form controller
-          with the original Quadratic Programming (QP) method. This plot shows the safety enforcement
-          on the linear velocities of the platform. The results without the CBF are shown in black.
-          QP-based results are magenta, while the closed-form solution is in blue.
+          The proposed controller is deployed to the Stewart platform prototype.
+          The experiment results evaluate the performance of the QP-CBF and the proposed closed-form solution.
+          It also compares the compuation time required to synthesize the safe controllers.
+          The result shows that in the real-time deployment, the closed-form solution offers a lower average computational time, compared to its QP counterpart which increased whenever the platform reaches the unsafe regions.
         </p>
       </div>
     </div>
 
+    <div class="columns is-centered" style="margin-top: 2rem;">
+      <div class="column is-10 has-text-centered">
+        <video id="sim-video" autoplay controls muted loop playsinline width="100%">
+          <source src="./static/videos/Z Comparison vCBF.mp4" type="video/mp4">
+        </video>
+
+        <p class="subtitle is-6 has-text-justified">
+          Experimental results illustrating the trade-off between performance and safety for different values of the CBF parameters. 
+          Larger parameter values relax safety enforcement, leading to less conservative but potentially riskier behavior.
+        </p>
+      </div>
+    </div>
+    
   </div>
 </section>
-
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
