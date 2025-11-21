@@ -88,8 +88,8 @@
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup> University of Houston</span>
-            <span class="author-block"><sup>2</sup> Parahyangan Catholic University</span>
+            <span class="author-block"><sup>1</sup> University of Houston, </span>
+            <span class="author-block"><sup>2</sup> Parahyangan Catholic University, </span>
             <span class="author-block"><sup>3</sup> University of South Carolina</span>
           </div>
 
@@ -146,7 +146,9 @@
         style="max-width: 100%; height: auto;"
       />
       <h2 class="subtitle has-text-centered">
-        Architecture of the proposed safe Stewart platform controller
+        Architecture of the proposed safe Stewart platform controller. The user inputs the desired trajectories of the platform, which will be used to calculate the nominal controller.
+        The nominal controller and the current platform states are used in the CBF-based safety filter.
+        The output of this safety filter produced the safe control inputs, which are then used for the Stewart platform system.
       </h2>
     </div>
   </div>
