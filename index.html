@@ -136,21 +136,20 @@
   </div>
 </section>
 
-<section class="hero teaser">
+
+<section class="section">
   <div class="container is-max-desktop">
-    <div class="hero-body has-text-centered">
-      <img
-        id="teaser"
-        src="./static/images/Architecture.png"
-        alt="Architecture of the proposed safe Stewart platform controller"
-        style="max-width: 100%; height: auto;"
-      />
-      <h2 class="subtitle has-text-centered">
-        Architecture of the proposed safe Stewart platform controller. The user inputs the desired trajectories of the platform, which will be used to calculate the nominal controller.
-        The nominal controller and the current platform states are used in the CBF-based safety filter.
-        The output of this safety filter produced the safe control inputs, which are then used for the Stewart platform system.
-      </h2>
+
+    <h2 class="title is-3 has-text-centered">Overview Video</h2>
+
+    <div class="columns is-centered" style="margin-top: 1rem;">
+      <div class="column is-10 has-text-centered">
+        <video autoplay controls muted loop playsinline width="100%">
+          <source src="./static/videos/RAL Video V2.mp4" type="video/mp4">
+        </video>
+      </div>
     </div>
+
   </div>
 </section>
 
@@ -175,21 +174,24 @@
     </div>
     <!--/ Abstract. -->
 
-  <!-- Paper video. -->
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-      <h2 class="title is-3">Video</h2>
-      <div class="publication-video">
-        <iframe
-          src="https://www.youtube.com/embed/qUQcRUDPYi0?rel=0&showinfo=0"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-      </div>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-centered">
+      <img
+        id="teaser"
+        src="./static/images/Architecture.png"
+        alt="Architecture of the proposed safe Stewart platform controller"
+        style="max-width: 100%; height: auto;"
+      />
+      <h2 class="subtitle has-text-centered">
+        Architecture of the proposed safe Stewart platform controller. The user inputs the desired trajectories of the platform, which will be used to calculate the nominal controller.
+        The nominal controller and the current platform states are used in the CBF-based safety filter.
+        The output of this safety filter produced the safe control inputs, which are then used for the Stewart platform system.
+      </h2>
     </div>
   </div>
-  <!--/ Paper video. -->
+</section>
+
 
 
 
