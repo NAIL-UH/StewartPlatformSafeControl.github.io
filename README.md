@@ -1,6 +1,6 @@
 # Stewart Platform CBF-Based Safe Control 
 
-This is the repository that contains source code for the [Stewart Platform CBF-Based Safe Control website]([https://nail-uh.github.io/StewartPlatformSafeControl.github.io/]).
+This is the repository that contains source code for the [Stewart Platform CBF-Based Safe Control website](https://nail-uh.github.io/StewartPlatformSafeControl.github.io/).
 
 <!--
 If you find it useful for your work please cite:
