@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Design and Experimental Validation of Closed-Form CBF-Based Safe Control for Stewart Platform Under Multiple Constraints.">
+        content="Experimentally Validated Closed-Form Multi-Constraint CBF Safety Filtering for a Stewart Platform.">
   <meta name="keywords" content="Stewart plarform, Control Barrier Functions, Closed-form solution">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Design and Experimental Validation of Closed-Form CBF-Based Safe Control for Stewart Platform Under Multiple Constraints</title>
+  <title>Experimentally Validated Closed-Form Multi-Constraint CBF Safety Filtering for a Stewart Platform</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -169,12 +169,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            This paper presents a closed-form Control Barrier Function (CBF)–based control framework for ensuring safe operation of a Stewart platform prototype.
-            The proposed formulation simultaneously enforces multiple position and velocity safety constraints.
-            An explicit closed-form solution is derived for the associated safety condition, thereby eliminating the need to solve a Quadratic Program (QP) at each control step and enabling efficient real-time implementation.
-            Furthermore, necessary and sufficient conditions to avoid singularity in the closed-form calculation is also presented.
-            The approach is validated through both simulation and experimental studies on a physical Stewart platform, demonstrating that the closed-form controller achieves safety performance equivalent to the QP-based method while significantly reducing computational overhead.
-            The results confirm the feasibility and robustness of the proposed framework for real-time deployment in safety-critical parallel robotic systems.
+            This paper studies a closed-form solution to a control barrier function (CBF)-based safety-critical control problem for a Stewart platform with simultaneous position and velocity constraints.
+            The proposed method simultaneously handles multiple position and velocity constraints through an explicit closed-form control law 
+            eliminating the need to solve a Quadratic Program (QP) at every control step and enabling efficient real-time safe control implementation.
+            Necessary and sufficient conditions are derived to ensure that the closed-form solutions remain non-singular and uniquely defined under multiple constraints.
+            The controller is validated in both simulation and hardware experiments on a custom-built Stewart platform prototype,
+            demonstrating constraint satisfaction in the tested scenarios and tracking behavior comparable to the QP-based formulation while reducing the average active-filtering computation time by approximately 9x.
+            The results confirm that the proposed approach provides a reliable and computationally lightweight framework for real-time safe control of parallel robotic systems.
           </p>
         </div>
       </div>
