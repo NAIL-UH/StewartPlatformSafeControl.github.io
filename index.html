@@ -153,7 +153,7 @@
     <div class="columns is-centered" style="margin-top: 1rem;">
       <div class="column is-10 has-text-centered">
         <video autoplay controls muted loop playsinline width="100%">
-          <source src="./static/videos/Experimentally Validated Closed-Form Multi-Constraint CBF Safety Filtering for a Stewart Platform_Supplementary Video.mp4" type="video/mp4">
+          <source src="./static/videos/SP_IEEE_TCST.mp4" type="video/mp4">
         </video>
       </div>
     </div>
@@ -171,12 +171,10 @@
         <div class="content has-text-justified">
           <p>
             This paper studies a closed-form solution to a control barrier function (CBF)-based safety-critical control problem for a Stewart platform with simultaneous position and velocity constraints.
-            The proposed method simultaneously handles multiple position and velocity constraints through an explicit closed-form control law 
-            eliminating the need to solve a Quadratic Program (QP) at every control step and enabling efficient real-time safe control implementation.
-            Necessary and sufficient conditions are derived to ensure that the closed-form solutions remain non-singular and uniquely defined under multiple constraints.
-            The controller is validated in both simulation and hardware experiments on a custom-built Stewart platform prototype,
-            demonstrating constraint satisfaction in the tested scenarios and tracking behavior comparable to the QP-based formulation while reducing the average active-filtering computation time by approximately 9x.
-            The results confirm that the proposed approach provides a reliable and computationally lightweight framework for real-time safe control of parallel robotic systems.
+            The proposed method simultaneously handles multiple position and velocity constraints through an explicit closed-form control law, eliminating the need to solve a Quadratic Program (QP) at every control step and enabling efficient real-time safe control implementation.
+            Necessary and sufficient rank conditions are characterized for the inverse-based joint-active expression, while strict convexity guarantees a unique primal optimizer whenever the composite QP is feasible.
+            The controller is validated in both simulation and hardware experiments on a custom-built Stewart platform prototype, demonstrating constraint satisfaction in the tested scenarios, tracking behavior comparable to the QP-based formulation, and an approximately 9× speedup in mean active-filtering computation time.
+            The results demonstrate the practical viability of the proposed approach for real-time safe control of parallel robotic systems.
           </p>
         </div>
       </div>
